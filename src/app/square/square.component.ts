@@ -10,9 +10,7 @@ export class SquareComponent {
   @Input() value: square;
   @Output() index = new EventEmitter<square>();
 
-  disableBtn: Boolean = false;
-
   disableButton() {
-    this.disableBtn = true;
+    this.index.emit(this.value);
   }
 }

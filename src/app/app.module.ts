@@ -9,7 +9,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GameComponent } from './game/game.component';
 import { SquareComponent } from './square/square.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +24,7 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule,
     MatSliderModule,
     MatCardModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
