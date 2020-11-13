@@ -1,0 +1,38 @@
+main {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 1px;
+}
+
+
+app-square {
+  border: 1px gray solid;
+  height: 100%;
+  width: 100%;
+}
+
+mat-grid-list {
+  width: 30%;
+
+  margin: auto;
+  margin-top: 1%;
+}
+
+mat-card {
+  margin: 1% 10% 0;
+  justify-content: flex-end;
+  border: 3px solid green;
+}
+
+mat-slider {
+  width: 15cm;
+  height: 2%;
+  padding: 5px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-card-title {
+  display: inline-flex;
+}

@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>
+    Select Grid Size
+    <div>
+
+    </div>
+    <mat-slider [disabled]="false" [invert]="false" [max]="10" [min]="3" [step]="1" [thumbLabel]="true"
+      [tickInterval]="7" ngModel [vertical]="false">
+    </mat-slider>
+  </mat-card-title>
+</mat-card>
+
+
+
+<mat-grid-list cols="3" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let box of boxes; let i = index">
+    <app-square [value]="box" (click)="changePlayer(i)"></app-square>
+  </mat-grid-tile>
+</mat-grid-list>
